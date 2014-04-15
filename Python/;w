@@ -1,0 +1,15 @@
+from grid import Grid
+
+def main():
+  g = Grid(10, 10)
+
+  g.horizontalLine(0, 5, 4)
+  g.horizontalLine(5, 5, 4)
+
+  g.findPath({"x": 0, "y": 0}, {"x": 9, "y": 9})
+
+  print g
+
+
+if __name__ == "__main__":
+  main();
